@@ -18,6 +18,9 @@ spec:
         - name: superinsight-trainer-gpt
           image: docker.io/superinsight/superinsight-trainer-gpt:latest
           imagePullPolicy: Always
+          resources:
+            limits:
+              nvidia.com/gpu: 1
           env:
             - name: API_HOST
               value: 'https://finetuning.api.superinsight.dev'

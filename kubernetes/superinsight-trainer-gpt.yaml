@@ -2,7 +2,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: superinsight-dev
   name: superinsight-trainer-gpt
 spec:
   replicas: 1
